@@ -1,3 +1,8 @@
+This is a fork of [damiencaselli/hugo-journal](https://github.com/damiencaselli/hugo-journal). Modifications from the original includes
+
+- Google Analytics
+- 
+
 # Journal
 
 _Journal_ is a minimalist theme for [Hugo](http://gohugo.io).
