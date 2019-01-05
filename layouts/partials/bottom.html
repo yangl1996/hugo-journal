@@ -2,8 +2,9 @@
       <footer class="site-footer">
         <span itemscope itemtype="http://schema.org/Person">
           <link itemprop="url" href="{{ .Site.BaseURL }}">
-          <span itemprop="name">{{- .Site.Author.name -}}</span>
-
+          <a itemprop="url" href="{{ .Site.Author.homepage }}"><span itemprop="name">
+            {{- .Site.Author.name -}}
+          </span></a>
           {{ if isset .Site.Params "work" -}},
           <span itemprop="jobTitle">{{- .Site.Params.work.jobTitle -}}</span> at
           <span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="{{ .Site.Params.work.companyUrl }}"><span itemprop="name">
