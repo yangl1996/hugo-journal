@@ -152,6 +152,9 @@ code {
 
 .chroma code {
   background-color: inherit;
+  padding: 0.5em;
+  overflow-x: auto;
+  display: block;
 }
 
 article,
@@ -276,6 +279,3 @@ h6 {
   }
 }
 
-.hljs {
-  font-size: .875rem;
-}
