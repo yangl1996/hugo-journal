@@ -279,3 +279,11 @@ h6 {
   }
 }
 
+sup.footnote-ref {
+    ::before {
+        content: '['
+    }
+    ::after {
+        content: ']'
+    }
+}
