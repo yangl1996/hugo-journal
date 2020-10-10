@@ -2,7 +2,7 @@ $black: #303030;
 $gray: #686868;
 $light-gray: #e5e5e5;
 $white: #fbfbfb;
-$serif: 'Arvo';
+$serif: 'Source Serif Pro';
 $monospace: '"Source Code Pro"';
 $fs: 1rem;
 $fs-large: 1.125rem;
@@ -140,6 +140,7 @@ pre {
 }
 
 pre {
+  overflow-x:auto;
   max-width: 100%;
 }
 
