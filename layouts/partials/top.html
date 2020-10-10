@@ -23,8 +23,10 @@
     {{- end }}
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro:400,700">
-    <link rel="stylesheet" href="{{ "css/journal.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}">
+    {{ $style := resources.Get "scss/journal.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $colors := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $colors.Permalink }}">
     <link href="{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
     {{ template "_internal/google_analytics_async.html" . }}
 
