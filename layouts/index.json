@@ -1,7 +1,7 @@
 {
     "posts":
     [
-        {{- range $idx, $post := .Pages }}
+        {{- range $idx, $post := site.RegularPages }}
         {{ if $idx }},{{ end }}{
             "title": "{{ $post.Title }}",
             "date": "{{ $post.Date.Format "2006-01-02T15:04:05Z07:00" }}",
