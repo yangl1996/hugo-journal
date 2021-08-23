@@ -30,6 +30,8 @@
         <!-- {{ hugo.BuildDate }} -->
       </footer>
     </div>
+    {{ if isset .Site.Params "goatcounter" -}}
     <script data-goatcounter="https://{{ .Site.Params.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    {{- end}}
   </body>
 </html>
